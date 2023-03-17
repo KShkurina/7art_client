@@ -1,0 +1,249 @@
+@import "../../variables.scss";
+
+.carousel {
+  max-width: 100%;
+  margin: 30px auto;
+  font-family: Roboto, sans-serif;
+  position: relative;
+}
+//.carousel>div>div>div>div>div>div{
+//  //max-width: 55%;
+//}
+
+.carousel > div > div > ul {
+  width: 100px;
+  background-color: white;
+  padding: 10px 47px !important;
+  //display: flex !important;
+  //display: block;
+  //flex-direction: row !important;
+  //justify-content: center !important;
+  margin: 0 auto !important;
+  bottom: 0px !important;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.carousel > div > div > ul > li {
+  width: 6px !important;
+  margin: 0 6px !important;
+}
+
+.carousel > div > div > ul > li > button {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #C4C4C4 !important;
+  border-radius: 50% !important;
+}
+
+.carousel > div > div > ul > li > button:active {
+  background-color: #617192 !important;
+}
+
+.buttons {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.button {
+  padding: 10px 13px;
+  border: 1px solid #D5D5D5;
+  color: #BCB3B3;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #617192;
+  border: 1px solid #617192;
+  color: #BCB3B3;
+}
+
+.button + .button {
+  margin-left: 11px;
+}
+
+.carousel_slide {
+  background: #E5E5E5;
+  display: flex;
+  padding: 3% 5% 4% 3.5%;
+  //justify-content: space-between;
+  column-gap: 20px;
+}
+
+.carousel_slide > * {
+  flex: 1 1 auto;
+}
+
+.carousel_slide > img {
+  //max-width: 30%;
+  max-width: 443px;
+  max-height: 448px;
+  border: 7px solid #0F0E0E;
+}
+
+.carousel_slide_leftPart > h2 {
+  font-size: 20px;
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+.carousel_slide_leftPart > h3 {
+  font-size: 53px;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 5px;
+
+}
+
+.carousel_slide_leftPart > a {
+  text-decoration: none;
+  background-color: #617192;
+  color: #F9FBFF;
+  padding: 12px 22px;
+}
+
+.carousel_slide_centerPart {
+  padding-top: 400px;
+  text-align: right;
+  line-height: 12px;
+  font-size: 16px;
+
+
+}
+
+.carousel_slide_centerPart > h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.carousel_slide_centerPart > h5 {
+  font-weight: 800;
+
+}
+
+
+
+.slick-dots-bottom > li {
+  width: 6px !important;
+  margin: 0 3px !important;
+
+}
+
+.slick-dots-bottom > li > button {
+  width: 6px !important;
+  height: 6px !important;
+  background-color: #C4C4C4 !important;
+  border-radius: 50% !important;
+}
+
+.slick-active > button {
+  background-color: #617192 !important;
+}
+
+.element.style {
+  display: block;
+  background-color: white;
+  width: 25px;
+}
+
+
+.ant-carousel .slick-dots-bottom {
+  bottom: 0px !important;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+
+.ant-carousel .slick-dots {
+  margin: 30px 0 auto !important;
+  width: 40px;
+  background-color: white;
+  padding: 10px 47px;
+
+}
+
+@media (max-width: $tablet){
+  .carousel_slide_leftPart > h2 {
+    font-size: 15px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+  }
+
+  .carousel_slide_leftPart > h3 {
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 4px;
+
+  }
+  .carousel_slide > img {
+    max-width: 220px;
+    max-height: 220px;
+    //margin-top: 20px;
+  }
+  .carousel_slide_centerPart {
+    padding-top: 180px;
+    text-align: right;
+    line-height: 12px;
+    font-size: 16px;
+  }
+  .carousel_slide {
+    padding: 7% 6% 7% 3.5%;
+  }
+}
+
+@media (max-width: $mobile){
+  .carousel_slide_leftPart > h2 {
+    font-size: 12px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    line-height: 1.2;
+  }
+
+  .carousel_slide_leftPart > h3 {
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+  }
+  .carousel_slide > img {
+    max-width: 160px;
+    max-height: 150px;
+    margin-top: 10px;
+  }
+  .carousel_slide_centerPart {
+    padding-top: 130px;
+    //text-align: right;
+    //line-height: 12px;
+    font-size: 12px;
+  }
+  .carousel_slide {
+    padding: 7% 6% 7% 3.5%;
+  }
+  .carousel_slide_leftPart > a {
+    padding: 4px 6px;
+  }
+  .carousel_slide_centerPart > h4 {
+    font-size: 10px;
+  }
+  .button {
+    padding: 6px 6px;
+
+  }
+  .buttons {
+    left: 25px;
+    bottom: 20px;
+  }
+
+
+}

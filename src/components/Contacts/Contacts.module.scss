@@ -1,0 +1,186 @@
+@import "../../variables.scss";
+
+.contacts{
+  position: relative;
+  margin: 0 auto 50px auto ;
+  color: #000000;
+  line-height: 43px;
+}
+
+.contacts>img{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contacts>h3{
+  position: absolute;
+  text-transform: uppercase;
+  top: 93px;
+  left: 70px;
+  font-size: 37px;
+  font-weight: 400;
+  color: #0D0E10;
+  line-height: 43px;
+}
+
+.tel1{
+  position: absolute;
+  top: 184px;
+  left: 70px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 43px;
+}
+
+.tel1>span{
+  font-weight: 400;
+}
+
+.tel2{
+  position: absolute;
+  top: 215px;
+  left: 70px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 43px;
+}
+
+.tel2>span{
+  font-weight: 400;
+}
+
+.email{
+  position: absolute;
+  top: 258px;
+  left: 70px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.email>span{
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.open{
+  position: absolute;
+  top: 323px;
+  left: 70px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.time{
+  position: absolute;
+  top: 348px;
+  left: 70px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.time>span{
+  font-weight: 700;
+}
+
+.adv{
+  position: absolute;
+  top: 396px;
+  left: 70px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn{
+  position: absolute;
+  top: 470px;
+  left: 70px;
+  background-color: #586277;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFF3F3;
+  border-radius: 5px;
+  border: none;
+}
+
+  @media (max-width: $tablet) {
+    .contacts>h3{
+      top: 45px;
+      font-size: 32px;
+    }
+    .tel1{
+      top: 90px;
+      font-size: 20px;
+    }
+    .tel2{
+      top: 115px;
+      font-size: 20px;
+    }
+    .email{
+      top: 160px;
+      font-size: 16px;
+    }
+    .open{
+      top: 210px;
+      font-size: 14px;
+    }
+
+    .time{
+      top: 225px;
+      font-size: 14px;
+    }
+    .adv{
+      display: none;
+    }
+    .btn{
+      top: 260px;
+      font-size: 16px;
+    }
+
+  }
+
+@media (max-width: $mobile){
+  .contacts>h3{
+    top: 15px;
+    left: 25px;
+    font-size: 18px;
+  }
+  .tel1{
+    top: 50px;
+    left: 25px;
+    font-size: 15px;
+  }
+  .tel2{
+    top: 70px;
+    left: 25px;
+    font-size: 15px;
+  }
+  .email{
+    top: 100px;
+    left: 25px;
+    font-size: 14px;
+  }
+  .open{display: none;
+  }
+
+  .time{
+    top: 130px;
+    left: 25px;
+    font-size: 12px;
+  }
+  .adv{
+    display: none;
+  }
+  .btn{
+    top: 156px;
+    left: 25px;
+    font-size: 14px;
+    line-height: normal;
+    padding: 6px 6px;
+  }
+
+}

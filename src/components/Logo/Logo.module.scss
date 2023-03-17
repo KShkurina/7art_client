@@ -1,0 +1,42 @@
+.wrap {
+  background-color: khaki;
+}
+
+.logo_wrapper {
+  position: relative;
+  display: block !important;
+  color: black !important;
+  user-select: none !important;
+
+  .logo_name {
+    font-family: Archive;
+    font-size: 3.5em;
+    letter-spacing: 0.05em;
+
+    span {
+      color: red !important;
+    }
+    &::after {
+      content: "TM";
+      position: absolute;
+      top: 1.4em;
+      right: -0.7em;
+      font-family: Roboto;
+      font-size: 0.25em;
+      font-weight: 300;
+      letter-spacing: normal;
+    }
+  }
+  .logo_store {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    max-width: 14em;
+    font-family: Roboto;
+    font-size: 1.16em;
+    font-weight: 400;
+    letter-spacing: 0.46em;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.container {
+  position: relative;
+  width: $pc;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (max-width: $tablet) {
+  .container {
+    width: $tablet;
+    padding: 0 20px;
+  }
+}
+@media (max-width: $mobile) {
+  .container {
+    width: $mobile;
+    padding: 0 8px;
+  }
+}

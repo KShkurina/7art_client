@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+.form {
+  div:nth-child(5) {
+    div {
+      div {
+        div {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  background-color: #586277;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.facebook {
+  background-color: #3b5995;
+  border-radius: 4px;
+  border-color: transparent;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.remind,
+.forgot {
+  color: $clr_hover;
+  &:hover {
+    font-weight: 700;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,11 @@
+.filteredCardsByWorld{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+
+}
+.card{
+  max-width: 33.33%;
+  margin: 7px;
+  flex: 1 1 auto;
+}

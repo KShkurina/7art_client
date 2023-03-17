@@ -1,0 +1,35 @@
+.filteredGoods {
+  display: flex;
+  // justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.card {
+  max-width: 33.33%;
+  margin: 7px;
+  flex: 1 1 auto;
+}
+
+.goods_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnMore {
+  color: #586277 !important;
+  border-color: #586277 !important;
+  background: white !important;
+  margin: 0 0 70px 0;
+  width: 120px;
+  padding: 10px 0;
+
+}
+
+.btnMore:hover {
+  border-color: #586277 !important;
+  background: #586277 !important;
+  color: white !important;
+}
